@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input[type="text"] {
+            background-color: aqua;
+        }
+        input[type="email"] {
+            background-color: yellow;
+        }
+        ul>li{ 
+            color:rgb(32, 253, 179);
+        }
+
+
+        h1+p{
+            color: red;
+        }   
+
+        div:not(.class1){
+            color: chocolate;
+        }
+
+
+        .d1::before{ 
+            content: "coding 💕";
+        }
+
+        .p1::first-letter{ 
+            font-size: 50px;
+            color:black;
+        }
+    </style>
+</head>
+<body>
+    name: <input type="text"> <br> <br>
+    email: <input type="email">
+
+    <h2>child selector</h2>
+    <ul>
+        <li>this one</li>
+        <li>this one</li>
+        <li>this one</li>
+    </ul>
+
+    <h2>Sibling selectors</h2>
+    <h1>I am elder brother</h1>
+    <p>I am younger sister</p>
+    <p>I am first cousin </p>
+
+    <h2>not selector</h2>
+    <div class="class1">random text
+    </div>
+    <div class="class2">random text</div>
+    <div class="class3">random text</div>
+    <div class="class4">random text</div>
+
+    <h2>Before selector </h2>
+    <h1 class="d1">is lovely</h1>
+
+    <h2>First letter</h2>
+    <p class="p1">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit ab officiis quibusdam aperiam sunt quo ex optio nostrum maiores! Recusandae id minus inventore ex impedit totam voluptas iste, fuga dolorem?
+    </p>
+</body>
+</html>
