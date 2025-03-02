@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border="2px" width="500px">
+        <tr>
+            <td>maths</td>
+            <td>English</td>
+        </tr>
+        <tr>
+            <td id="m"></td>
+            <td id="e"></td>
+        </tr>
+    </table>
+    <script>
+        math=+prompt("Enter your maths marks")
+        English=+prompt("Enter your English marks")
+        document.getElementById("m").innerHTML=math;
+        document.getElementById("e").innerHTML=English;
+    </script>
+</body>
+</html>
