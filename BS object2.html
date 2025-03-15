@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Finding the largest number with help of Argument objects</p>
+    <p id="result"></p>
+    <script>
+        function FindMax() {
+            var max = 0;
+            for (var i = 0; i < arguments.length; i++) {
+                if (arguments[i] > max) {
+                    max = arguments[i];
+                }
+            }
+            return max;
+            }
+            document.getElementById("result").innerHTML=FindMax(4,2,10,1,5,8,7,6,9,3);
+    </script>
+        
+</body>
+</html>
