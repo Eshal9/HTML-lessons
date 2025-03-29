@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class car{
+        constructor(brand){
+            this.brand=brand
+        }
+    present(){
+        document.write("i have a car of this brand " , this.brand)
+    }
+    
+    }
+    class model extends car{
+        constructor(brand,mod){
+            super(brand)
+            this.mod=mod
+        }
+        info(){
+            document.write(this.present() , " and the model is " , this.mod)
+        }
+    }
+      car1=new model("frank" , "mustang")
+      car1.present()
+    </script>
+</body>
+</html>
