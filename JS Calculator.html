@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .main{
+            width: fit-content;
+            background-color: black;
+            padding: 20px;
+            border-radius: 15px;
+        }
+
+        .btn{
+            margin: 5px;
+            width: 32px;
+            padding: 5px;
+            font-size: 18px;
+            cursor: pointer;
+            background-color: gray;
+            color: white;
+            font-weight: bold;
+
+        }
+
+        .btn:hover{
+            background-color: gainsboro;
+            color:black;
+        }
+
+        #screen{
+            padding: 5px;
+            margin-bottom: 4px;
+        }
+    </style>
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main">
+        <form name="form">
+            <input name="screen" id="screen" readonly>
+            <div class="rowl">
+                <button class="btn" onclick="getValue(this)" value="9" type="button">9</button>
+                <button class="btn" onclick="getValue(this)" value="8" type="button">8</button>
+                <button class="btn" onclick="getValue(this)" value="7" type="button">7</button>
+                <button class="btn" onclick="getValue(this)" value="+" type="button">+</button>
+            
+            </div>
+            <div class="row2">
+                <button class="btn" onclick="getValue(this)" value="6" type="button">6</button>
+                <button class="btn" onclick="getValue(this)" value="5" type="button">5</button>
+                <button class="btn" onclick="getValue(this)" value="4" type="button">4</button>
+                <button class="btn" onclick="getValue(this)" value="-" type="button">-</button>
+            </div>
+
+            <div class="row3">
+                <button class="btn" onclick="getValue(this)" value="3" type="button">3</button>
+                <button class="btn" onclick="getValue(this)" value="2" type="button">2</button>
+                <button class="btn" onclick="getValue(this)" value="1" type="button">1</button>
+                <button class="btn" onclick="getValue(this)" value="*" type="button">*</button>
+            </div>
+
+            <div class="row4">
+                <button class="btn" onclick="Clear()"  type="button">C</button>
+                <button class="btn" onclick="getValue(this)" value="0" type="button">0</button>
+                <button class="btn" onclick="equals()" value="=" type="button">=</button>
+                <button class="btn" onclick="getValue(this)" value="/" type="button">/</button>
+            </div>
+        </form>
+    </div>
+
+    <script>
+     function getValue(a){
+        form.screen.value+=a.value;
+     }
+     function Clear(){
+        form.screen.value=null;
+     }
+     function equals(){
+        form.screen.value=eval(form.screen.value);
+     }
+    </script>
+</body>
+</html>
